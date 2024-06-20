@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
-    color: #000000;
-    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-family:  "Inter", sans-serif;
 }
 
 /* MAIN CONTAINER */
@@ -19,7 +19,7 @@
 
 /* MAIN CONTAIN CALCFACT APP*/
 .containCalFact{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(28, 28, 28);
     width: 800px;
     height:450px ;
     display: flex;
@@ -42,6 +42,87 @@
 
 .informationCalFact h2{
     font-size: 30px;
+    color: #F2C230;
+
 }
 
+/* SECTION FACTORIAL APP */
+.factorialApp{
+    width: 50%;
+    height: 100%;
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 30px 30px 0;
 
+}
+
+.containFactorialApp{
+    margin: 0 auto;
+    background-color: #FFB400;
+    height: 350px;
+    width: 250px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.containFactorialApp h2{
+    font-size: 30px;
+    color: #192b93;
+}
+
+form{
+    width: 250px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+input{
+    width:45%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: #192b93;
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+button{
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #192b93;
+    color: white;
+}
+
+h3{
+    color: #192b93;
+}
+
+.resultFactorial{
+    background-color: #192b93;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.resultFactorial span{
+    font-size: 30px;
+}
