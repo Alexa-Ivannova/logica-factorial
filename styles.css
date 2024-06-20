@@ -1,145 +1,179 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 14px;
-    color: #ffffff;
-    font-family:  "Inter", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
 }
 
 /* MAIN CONTAINER */
-.mainContainer{
-    margin: 0 auto;
-    width: 100vw;
-    min-height:100vh ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mainContainer {
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* MAIN CONTAIN CALCFACT APP*/
-.containCalFact{
-    background-color: rgb(28, 28, 28);
-    width: 800px;
-    height:450px ;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    border-radius: 50px;
+.containCalFact {
+  background-color: rgb(28, 28, 28);
+  width: 800px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50px;
+  border-color: transparent;
 }
 
-.informationCalFact{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    padding: 50px;
-    text-align: center;
+.informationCalFact {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  text-align: center;
 }
 
-.informationCalFact h2{
-    font-size: 30px;
-    color: #F2C230;
-
+.informationCalFact h2 {
+  font-size: 30px;
+  color: #f2c230;
 }
 
 /* SECTION FACTORIAL APP */
-.factorialApp{
-    width: 50%;
+.factorialApp {
+  width: 50%;
+  height: 100%;
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 30px 30px 0;
+}
+
+.containFactorialApp {
+  margin: 0 auto;
+  background-color: #ffb400;
+  height: 380px;
+  width: 250px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.containFactorialApp h2 {
+  font-size: 30px;
+  color: #192b93;
+}
+
+form {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+input {
+  width: 45%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  color: #192b93;
+  text-align: center;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+button {
+  width: 40%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #192b93;
+  color: white;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: #fe8f1c;
+  color: #000000;
+}
+
+#msgError {
+  height: 13px;
+  width: 80%;
+  color: rgb(255, 0, 0);
+  font-size: 10px;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #192b93;
+}
+
+.resultFact {
+  background-color: #192b93;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.resultFact span {
+  font-size: 30px;
+  overflow: hidden;
+  /* white-space: initial; */
+  text-overflow: ellipsis;
+
+}
+
+@media (max-width: 744px) {
+
+/* MAIN CONTAINER */
+.mainContainer {
+    min-height: 0%;
+    margin: 10px auto;
+  }
+  
+  /* MAIN CONTAIN CALCFACT APP*/
+
+  .containCalFact {
+    width: 90%;
     height: 100%;
-    background-color: #EDEDED;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 30px 30px 0;
-
-}
-
-.containFactorialApp{
-    margin: 0 auto;
-    background-color: #FFB400;
-    height: 380px;
-    width: 250px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: space-around ;
-    align-items: center;
-    text-align: center;
     flex-direction: column;
-}
+  }
 
-.containFactorialApp h2{
-    font-size: 30px;
-    color: #192b93;
-}
-
-form{
-    width: 250px;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px;
-}
-
-input{
-    width:45%;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    color: #192b93;
+  .informationCalFact {
+    width: 100%;
+    gap: 20px;
     text-align: center;
-}
+    padding: 30px;
+  }
 
-input::placeholder{
-    text-align: center;
-}
 
-button{
-    width: 40%;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    background-color: #192b93;
-    color: white;
-    font-size: 13px;
-}
+/* SECTION FACTORIAL APP */
+.factorialApp {
+    width: 100%;
+    padding: 30px;
+    border-radius: 0 0 30px 30px;
+  }
 
-button:hover{
-    background-color: #FE8F1C;
-    color: #000000;
 }
-
-#msgError{
-    /* background-color: #ffd1d1; */
-    height: 13px;
-    width: 80%;
-    color: rgb(255, 0, 0);
-    font-size: 10px;
-    border-radius: 3px;
-    margin: 0 auto;
-}
-
-h3{
-    color: #192b93;
-}
-
-.resultFact{
-    background-color: #192b93;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.resultFact span{
-    font-size: 30px;
-}
-
