@@ -61,7 +61,7 @@
 .containFactorialApp{
     margin: 0 auto;
     background-color: #FFB400;
-    height: 350px;
+    height: 380px;
     width: 250px;
     border-radius: 40px;
     display: flex;
@@ -106,16 +106,22 @@ button{
     border: none;
     background-color: #192b93;
     color: white;
+    font-size: 13px;
+}
+
+button:hover{
+    background-color: #FE8F1C;
+    color: #000000;
 }
 
 h3{
     color: #192b93;
 }
 
-.resultFactorial{
+.resultFact{
     background-color: #192b93;
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -123,7 +129,7 @@ h3{
     text-align: center;
 }
 
-.resultFactorial span{
+.resultFact span{
     font-size: 30px;
 }
 

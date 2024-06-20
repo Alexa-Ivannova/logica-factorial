@@ -1,4 +1,6 @@
-
+const formCalc = document.getElementById("formCalc")
+const valueCal = document.getElementById("valueCal");
+const resultFact = document.getElementById("resultFact");
 
 // FOR = () ADENTRO VAN LAS CONDICIONES, ESTA LLEVA 3 PARAMETROS
 // 1) Variable (let i = 0) siempre va index o i POR CONVENCIÓN   i= INDICE DE LO QUE SE ESTA RECORRIENDO 0 es el valor de i, puede ser diferentea a 0 segun el caos
@@ -6,13 +8,23 @@
 // 3) Indicar que i valga un valor más cada que da una vuelta (; i++)
 // SINTAXIS FOR =>  for(let i = 0; i <= x; i++){ Logica de lo que quiero que ejecute en cada recorrido indica en mi for}
 
-let  resultFactorial = 1
-const numFactorial = 6;
 
-for (let i = 1; i <= numFactorial; i++ ){
-    resultFactorial = i * resultFactorial;
-}
-console.log(resultFactorial);
+formCalc.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+   const value = valueCal.value;
+   let  resultFactorial = 1
+   const numFactorial = value;
+   for (let i = 1; i <= numFactorial; i++ ){
+       resultFactorial = i * resultFactorial;
+   }   
+   resultFact.textContent = resultFactorial
+})
+
+
+
+
+
 
 // DEVOLVER
 
